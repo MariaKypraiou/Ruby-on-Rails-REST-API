@@ -1,5 +1,5 @@
 require 'rails_helper'
-require 'spec_helper'
+
 
 # Test suite for the Item model
 RSpec.describe Item, type: :model do
