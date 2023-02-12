@@ -54,6 +54,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_serializers (0.10.13)
+      actionpack (>= 4.1, < 7.1)
+      activemodel (>= 4.1, < 7.1)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (7.0.4.2)
       activesupport (= 7.0.4.2)
       globalid (>= 0.3.6)
@@ -80,6 +85,8 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    case_transform (0.2)
+      activesupport
     concurrent-ruby (1.2.0)
     crass (1.0.6)
     database_cleaner (2.0.1)
@@ -108,6 +115,7 @@ GEM
       reline (>= 0.3.0)
     json-schema (3.0.0)
       addressable (>= 2.8)
+    jsonapi-renderer (0.2.2)
     jwt (2.7.0)
     loofah (2.19.1)
       crass (~> 1.0.2)
@@ -206,12 +214,14 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.1.8)
     zeitwerk (2.6.6)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  active_model_serializers (~> 0.10.0)
   bcrypt (~> 3.1.7)
   bootsnap
   database_cleaner
@@ -227,6 +237,7 @@ DEPENDENCIES
   shoulda-matchers (~> 3.1)
   sqlite3 (~> 1.4)
   tzinfo-data
+  will_paginate (~> 3.1.0)
 
 RUBY VERSION
    ruby 3.0.2p107
